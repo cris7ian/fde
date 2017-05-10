@@ -12,7 +12,6 @@ export const About = props => (
       </a>
       .
     </p>
-
     <p>
       I follow a fixed set of rules:
     </p>
@@ -26,11 +25,9 @@ export const About = props => (
       <li>No TV.</li>
       <li>A % of the script comes from the original.</li>
     </ul>
-
     <p>
       Enjoy.
     </p>
-
     <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
       <img
         alt="Licencia Creative Commons"
