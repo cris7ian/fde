@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Home } from './containers/Home'
+import { Contact } from './containers/Contact'
 import { About } from './containers/About'
 
 class App extends Component {
@@ -20,13 +21,14 @@ class App extends Component {
               {' '}
               /
               {' '}
-              <a href="https://twitter.com/cris7ian/status/393489939955847169">
+              <Link to="/contact">
                 Contact
-              </a>
+              </Link>
             </navigation>
             <div>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
             </div>
           </div>
         </div>
