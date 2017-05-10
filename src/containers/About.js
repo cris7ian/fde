@@ -7,19 +7,26 @@ export const About = props => (
     <p>
       All and all,
       {' '}
-      <em>First Draft Endings</em>
+      <i>First Draft Endings</i>
       {' '}
-      is a project conceived by me, Cristian E. Caroli.
+      is a project conceived by me,
+      {' '}
+      <a target="_blank" href="http://www.cristiancaroli.com">
+        Cristian E. Caroli
+      </a>
+      .
     </p>
 
     <p>
       I follow a fixed set of rules:
     </p>
     <ul>
-      <li>It's has to end the story.</li>
+      <li>Each <i>FDE</i> has to end the story.</li>
       <li>A single page.</li>
       <li>No outside feedback before posting.</li>
-      <li>No duplicates. Once a story gets a FDE, it won't get another one.</li>
+      <li>
+        No duplicates. Once a story gets a <i>FDE</i>, it won't get another one.
+      </li>
       <li>No TV.</li>
       <li>A % of the script comes from the original.</li>
     </ul>
