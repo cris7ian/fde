@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import { Home } from './containers/Home'
 import { Contact } from './containers/Contact'
 import { About } from './containers/About'
+import { Error } from './components/Error'
 
 class App extends Component {
   render() {
@@ -26,9 +27,13 @@ class App extends Component {
               </Link>
             </navigation>
             <div>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/contact" component={Contact} />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/draft/:title" component={Home} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/contact" component={Contact} />
+                <Route component={Error} />
+              </Switch>
             </div>
           </div>
         </div>
