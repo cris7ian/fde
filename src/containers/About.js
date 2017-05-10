@@ -3,7 +3,6 @@ import React from 'react'
 export const About = props => (
   <div>
     <h2>About This Project</h2>
-
     <p>
       All and all, <i>First Draft Endings</i>
       is a project conceived by me,

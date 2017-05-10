@@ -1,3 +1,3 @@
 import React from 'react'
 
-export const Home = props => <div>Home!</div>
+export const Home = props => <div>FDEs go here. :)</div>
