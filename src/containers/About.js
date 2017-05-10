@@ -5,10 +5,7 @@ export const About = props => (
     <h2>About This Project</h2>
 
     <p>
-      All and all,
-      {' '}
-      <i>First Draft Endings</i>
-      {' '}
+      All and all, <i>First Draft Endings</i>
       is a project conceived by me,
       {' '}
       <a target="_blank" href="http://www.cristiancaroli.com">
