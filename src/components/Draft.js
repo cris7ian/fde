@@ -6,7 +6,11 @@ export const Draft = ({ draft }) => (
     <h2>{draft.name}</h2>
     <h4>{moment(draft.date, 'MM-DD-YYYY').fromNow()}</h4>
     <div>
-      image with caption
+      <img
+        className="page"
+        src={`${process.env.PUBLIC_URL}/drafts/${draft.image}.jpg`}
+        alt={draft.caption}
+      />
     </div>
     <div>
       share it
