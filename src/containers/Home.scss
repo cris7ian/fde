@@ -3,13 +3,26 @@
   a {
     cursor: pointer;
   }
+
+  .disabled {
+    opacity: .5;
+  }
 }
 
 .fde {
   text-align: center;
 
+  h4 {
+    text-transform: capitalize;
+  }
+
   .page {
     max-width: 600px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 3px 6px 6px rgba(0,0,0,0.23), 0 -2px 20px rgba(0,0,0,0.10),;
+  }
+
+  .links {
+    padding-top: 20px;
+    height: 50px;
   }
 }

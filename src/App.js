@@ -35,6 +35,10 @@ class App extends Component {
                 <Route component={Error} />
               </Switch>
             </div>
+            <div className="footer">
+              <hr />
+              <i>First Draft Endings</i> by Cristian E. Caroli.
+            </div>
           </div>
         </div>
       </Router>
