@@ -1,8 +1,12 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 export const About = props => (
   <div>
-    <h2>About This Project 📓</h2>
+    <Helmet>
+      <title>First Draft Endings: About this Project</title>
+    </Helmet>
+    <h2>About this Project 📓</h2>
     <p>
       All and all, <i>First Draft Endings</i>
       is a project conceived by me,
@@ -11,6 +15,9 @@ export const About = props => (
         Cristian E. Caroli
       </a>
       .
+    </p>
+    <p>
+      Think of this as a satiric screenplay comic.
     </p>
     <p>
       I follow a fixed set of rules:

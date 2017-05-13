@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import { Home } from './containers/Home'
 import { Contact } from './containers/Contact'
 import { About } from './containers/About'
@@ -11,21 +12,31 @@ class App extends Component {
     return (
       <Router>
         <div>
+          <Helmet>
+            <meta
+              name="description"
+              content="First Draft Endings is an online screenplay comic"
+            />
+          </Helmet>
           <div className="container">
             <h1>First Draft Endings</h1>
-            <navigation>
-              <Link to="/">Home</Link>
-              {' '}
-              /
-              {' '}
-              <Link to="/about">About</Link>
-              {' '}
-              /
-              {' '}
-              <Link to="/contact">
-                Contact
-              </Link>
-            </navigation>
+            <div className="menu">
+
+              <navigation>
+                <Link to="/">Home</Link>
+                {' '}
+                /
+                {' '}
+                <Link to="/about">About</Link>
+                {' '}
+                /
+                {' '}
+                <Link to="/contact">
+                  Contact
+                </Link>
+              </navigation>
+            </div>
+
             <div>
               <Switch>
                 <Route exact path="/" component={Home} />

@@ -18,7 +18,7 @@
     },
     {
       "name": "Toy Story 3",
-      "date": "02-29-2017",
+      "date": "02-28-2017",
       "image": "toy-story-3",
       "title": "toy-story-3",
       "imdb": "http://www.imdb.com/title/tt0435761",
@@ -131,10 +131,10 @@
     {
       "name": "Independence Day",
       "date": "11-20-2016",
-      "image": "mad-max",
-      "title": "mad-max",
-      "imdb": "http://www.imdb.com/title/tt1392190",
-      "caption": "Funny how Mel Gibson actually started behaving like Max in the past years"
+      "image": "independence-day",
+      "title": "independence-day",
+      "imdb": "http://www.imdb.com/title/tt0116629",
+      "caption": "The dog that so bravely escaped from that explosion in this movie has been dead for years"
     },
     {
       "name": "500 Days of Summer",
