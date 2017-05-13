@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import FontAwesome from 'react-fontawesome'
 
 export const About = props => (
   <div>
@@ -32,6 +33,14 @@ export const About = props => (
       <li>No TV.</li>
       <li>A % of the script comes from the original.</li>
     </ul>
+    <p>
+      One last thing, if there's something you don't like, feel free to
+      {' '}
+      <a href="https://github.com/cris7ian/fde">
+        {' '}<FontAwesome name="github" /> implement it
+      </a>
+      .
+    </p>
     <p>
       Enjoy.
     </p>
