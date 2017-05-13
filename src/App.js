@@ -6,11 +6,19 @@ import { Home } from './containers/Home'
 import { Contact } from './containers/Contact'
 import { About } from './containers/About'
 import { Error } from './components/Error'
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('UA-99123009-1')
+
+const logPageView = () => {
+  ReactGA.set({ page: window.location.pathname + window.location.search })
+  ReactGA.pageview(window.location.pathname + window.location.search)
+}
 
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router onUpdate={logPageView}>
         <div>
           <Helmet>
             <meta
