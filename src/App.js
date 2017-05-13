@@ -13,12 +13,13 @@ ReactGA.initialize('UA-99123009-1')
 const logPageView = () => {
   ReactGA.set({ page: window.location.pathname + window.location.search })
   ReactGA.pageview(window.location.pathname + window.location.search)
+  return null
 }
 
 class App extends Component {
   render() {
     return (
-      <Router onUpdate={logPageView}>
+      <Router>
         <div>
           <Helmet>
             <meta
@@ -46,6 +47,7 @@ class App extends Component {
             </div>
 
             <div>
+              <Route path="/" component={logPageView} />
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/draft/:title" component={Home} />
