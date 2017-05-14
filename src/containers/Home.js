@@ -22,7 +22,7 @@ export class Home extends Component {
           className={!hasPrev && 'disabled'}
           to={hasPrev ? `/draft/${drafts[drafts.length - 1].title}` : '#'}
         >
-          |&lt;
+          |&lt; first
         </Link>
         {' '}
         <Link
@@ -43,7 +43,7 @@ export class Home extends Component {
           className={!hasNext && 'disabled'}
           to={hasNext ? `/draft/${drafts[0].title}` : '#'}
         >
-          &gt;|
+          latest &gt;|
         </Link>
       </div>
     )
