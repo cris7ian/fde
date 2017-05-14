@@ -18,16 +18,33 @@ export class Home extends Component {
 
     const Controls = props => (
       <div className="controls">
-        {hasPrev &&
-          <Link to={`/draft/${drafts[drafts.length - 1].title}`}>|&lt;</Link>}
+        <Link
+          className={!hasPrev && 'disabled'}
+          to={hasPrev ? `/draft/${drafts[drafts.length - 1].title}` : '#'}
+        >
+          |&lt;
+        </Link>
         {' '}
-        {hasPrev &&
-          <Link to={`/draft/${drafts[index + 1].title}`}>&lt;Prev</Link>}
+        <Link
+          className={!hasPrev && 'disabled'}
+          to={hasPrev ? `/draft/${drafts[index + 1].title}` : '#'}
+        >
+          &lt;Prev
+        </Link>
         {' '}
-        {hasNext &&
-          <Link to={`/draft/${drafts[index - 1].title}`}>Next&gt;</Link>}
+        <Link
+          className={!hasNext && 'disabled'}
+          to={hasNext ? `/draft/${drafts[index - 1].title}` : '#'}
+        >
+          Next&gt;
+        </Link>
         {' '}
-        {hasNext && <Link to={`/draft/${drafts[0].title}`}>&gt;|</Link>}
+        <Link
+          className={!hasNext && 'disabled'}
+          to={hasNext ? `/draft/${drafts[0].title}` : '#'}
+        >
+          &gt;|
+        </Link>
       </div>
     )
 
