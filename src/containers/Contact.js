@@ -7,7 +7,7 @@ export const Contact = props => (
     <Helmet>
       <title>First Draft Endings: Contact</title>
     </Helmet>
-    <h2>Contact 👋</h2>
+    <h2>Contact <span role="img" aria-label="hand">👋</span></h2>
     <TweetEmbed id="393489939955847169" />
   </div>
 )

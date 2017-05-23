@@ -26,7 +26,7 @@ export const Draft = ({ draft }) => (
       />
     </div>
     <div className="links">
-      <a href={draft.imdb} target="_blank">
+      <a href={draft.imdb} target="_blank" rel="noopener noreferrer">
         <FontAwesome name="ticket" />IMDB link
       </a>
     </div>

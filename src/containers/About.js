@@ -7,12 +7,16 @@ export const About = props => (
     <Helmet>
       <title>First Draft Endings: About this Project</title>
     </Helmet>
-    <h2>About this Project 📓</h2>
+    <h2>About this Project <span role="img" aria-label="book">📓</span></h2>
     <p>
       All and all, <i>First Draft Endings</i>
       is a project conceived by me,
       {' '}
-      <a target="_blank" href="http://www.cristiancaroli.com">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="http://www.cristiancaroli.com"
+      >
         Cristian E. Caroli
       </a>
       .
