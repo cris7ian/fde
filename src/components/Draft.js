@@ -11,6 +11,11 @@ export const Draft = ({ draft }) => (
         property="og:image"
         content={`http://www.firstdraftendings.com/drafts/${draft.image}.jpg`}
       />
+      <meta
+        name="twitter:image"
+        content={`http://www.firstdraftendings.com/drafts/${draft.image}.jpg`}
+      />
+
     </Helmet>
 
     <h2>{draft.name}</h2>
