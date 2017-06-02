@@ -9,7 +9,7 @@ export const Draft = ({ draft }) => (
       <title>{`First Draft Endings: ${draft.name}`}</title>
       <meta
         property="og:image"
-        content={`${process.env.PUBLIC_URL}/drafts/${draft.image}.jpg`}
+        content={`http://www.firstdraftendings.com/drafts/${draft.image}.jpg`}
       />
     </Helmet>
 
