@@ -7,6 +7,10 @@ export const Draft = ({ draft }) => (
   <div className="fde">
     <Helmet>
       <title>{`First Draft Endings: ${draft.name}`}</title>
+      <meta
+        property="og:image"
+        content={`${process.env.PUBLIC_URL}/drafts/${draft.image}.jpg`}
+      />
     </Helmet>
 
     <h2>{draft.name}</h2>
