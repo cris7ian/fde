@@ -1,8 +1,16 @@
 {
   "drafts": [
     {
+      "name": "Call Me by Your Name",
+      "date": "12-25-2019",
+      "image": "call-me-by-your-name",
+      "title": "call-me-by-your-name",
+      "imdb": "https://www.imdb.com/title/tt5726616/",
+      "caption": "He was crying because he lost true love and that is so very hard to find that once is gone you feel lost"
+    },
+    {
       "name": "Star Wars: Episode IX - The Rise of Skywalker",
-      "date": "24-12-2019",
+      "date": "12-24-2019",
       "image": "rise-of-skywalker",
       "title": "rise-of-skywalker",
       "imdb": "https://www.imdb.com/title/tt2527338/",
