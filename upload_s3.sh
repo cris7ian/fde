@@ -1,1 +1,1 @@
-aws s3 sync build s3://first-draft-endings --acl public-read
+aws s3 sync build s3://firstdraftendings.com --acl public-read --profile cristian
